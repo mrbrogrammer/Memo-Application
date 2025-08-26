@@ -374,4 +374,9 @@
         <socket-binding name="txn-recovery-environment" port="4712"/>
         <socket-binding name="txn-status-manager" port="4713"/>
     </socket-binding-group>
+    <deployments>
+        <deployment name="GettingStartedServiceIT.war" runtime-name="GettingStartedServiceIT.war">
+            <content sha1="c6eaab52a48621dbfda111565e2632497055b89f"/>
+        </deployment>
+    </deployments>
 </server>

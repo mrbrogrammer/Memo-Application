@@ -374,9 +374,4 @@
         <socket-binding name="txn-recovery-environment" port="4712"/>
         <socket-binding name="txn-status-manager" port="4713"/>
     </socket-binding-group>
-    <deployments>
-        <deployment name="ROOT.war" runtime-name="ROOT.war">
-            <fs-exploded path="/Users/sims/getting-started/target/ROOT.war"/>
-        </deployment>
-    </deployments>
 </server>

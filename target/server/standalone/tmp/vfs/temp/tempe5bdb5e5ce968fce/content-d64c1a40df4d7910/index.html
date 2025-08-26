@@ -1,0 +1,104 @@
+<!--
+  ~ JBoss, Home of Professional Open Source.
+  ~ Copyright (c) 2023, Red Hat, Inc., and individual contributors
+  ~ as indicated by the @author tags. See the copyright.txt file in the
+  ~ distribution for a full listing of individual contributors.
+  ~
+  ~ This is free software; you can redistribute it and/or modify it
+  ~ under the terms of the GNU Lesser General Public License as
+  ~ published by the Free Software Foundation; either version 2.1 of
+  ~ the License, or (at your option) any later version.
+  ~
+  ~ This software is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~ Lesser General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Lesser General Public
+  ~ License along with this software; if not, write to the Free
+  ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+  ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+  -->
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My-Memo</title>
+
+    <link rel="stylesheet" type="text/css" href="screen.css">
+    <link rel="stylesheet" href="normalize.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="wildfly.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <script>
+        (() => {
+            "use strict";
+            window.addEventListener("load", () => {
+                const button = document.querySelector("button[type='submit']");
+                button.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    let name = document.querySelector('#nameInput');
+                    name = encodeURIComponent(name.value);
+                    const result = document.querySelector('#result');
+                    fetch(`/hello/${name}`)
+                        .then(response => {
+                            if (response.status === 200) {
+                                response.text().then(content => result.textContent = content);
+                            } else {
+                                result.textContent = `Unexpected response ${response.status}`;
+                            }
+                        });
+                });
+            });
+        })();
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <p>
+            <b>My-Memo</b> – A Simple Web App for Managing Memos
+        </p>
+    </div>
+    <div id="content">
+        <h1>Add Memo:</h1>
+
+        <form method="POST" action="">
+            <input type="text" name="memo" size="30"
+                   placeholder="Enter your memo here"/>
+            <button type="submit" id="save">Add</button>
+
+            <h1>My Memos:</h1>
+            <table>
+                <tr>
+                    <th>Memo</th>
+                    <th>Saved</th>
+                </tr>
+                <tr>
+                    <td>Repair car</td>
+                    <td>12:00 2014-11-12</td>
+                </tr>
+                <tr>
+                    <td>Play cards</td>
+                    <td>13:13 2014-11-13</td>
+                </tr>
+            </table>
+            <br/>
+            <button type="submit">Reset list</button>
+        </form>
+    </div>
+    <div id="footer">
+        <p>(C) 2015 "Add correct license", MIT license</p>
+    </div>
+</div>
+</body>
+</html>

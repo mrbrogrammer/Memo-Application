@@ -1,8 +1,8 @@
-2025-08-25 10:06:28,327 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.6.Final
-2025-08-25 10:06:28,926 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
-2025-08-25 10:06:28,933 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
-2025-08-25 10:06:29,053 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly 36.0.1.Final (WildFly Core 28.0.1.Final) starting
-2025-08-25 10:06:29,055 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+2025-08-26 21:40:04,839 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.6.Final
+2025-08-26 21:40:05,455 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
+2025-08-26 21:40:05,466 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2025-08-26 21:40:05,596 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly 36.0.1.Final (WildFly Core 28.0.1.Final) starting
+2025-08-26 21:40:05,598 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
 	[Standalone] = 
 	apple.awt.application.name = Main
 	file.encoding = UTF-8
@@ -36,15 +36,15 @@
 	java.vm.version = 24.0.1
 	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
 	jboss.home.dir = /Users/sims/getting-started/target/server
-	jboss.host.name = macbookpro
+	jboss.host.name = simphiwes-macbook-pro-16
 	jboss.modules.system.pkgs = org.jboss.byteman
-	jboss.node.name = macbookpro
-	jboss.qualified.host.name = macbookpro.lan
+	jboss.node.name = simphiwes-macbook-pro-16
+	jboss.qualified.host.name = simphiwes-macbook-pro-16.local
 	jboss.server.base.dir = /Users/sims/getting-started/target/server/standalone
 	jboss.server.config.dir = /Users/sims/getting-started/target/server/standalone/configuration
 	jboss.server.data.dir = /Users/sims/getting-started/target/server/standalone/data
 	jboss.server.log.dir = /Users/sims/getting-started/target/server/standalone/log
-	jboss.server.name = macbookpro
+	jboss.server.name = simphiwes-macbook-pro-16
 	jboss.server.persist.config = true
 	jboss.server.temp.dir = /Users/sims/getting-started/target/server/standalone/tmp
 	jdk.debug = release
@@ -65,7 +65,7 @@
 	sun.boot.library.path = /usr/local/Cellar/openjdk/24.0.1/libexec/openjdk.jdk/Contents/Home/lib
 	sun.cpu.endian = little
 	sun.io.unicode.encoding = UnicodeBig
-	sun.java.command = /Users/sims/getting-started/target/server/jboss-modules.jar -mp /Users/sims/getting-started/target/server/modules org.jboss.as.standalone -c=standalone.xml
+	sun.java.command = /Users/sims/getting-started/target/server/jboss-modules.jar -mp /Users/sims/getting-started/target/server/modules org.jboss.as.standalone
 	sun.java.launcher = SUN_STANDARD
 	sun.jnu.encoding = UTF-8
 	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
@@ -75,42 +75,176 @@
 	user.language = en
 	user.name = sims
 	user.timezone = Africa/Johannesburg
-2025-08-25 10:06:29,056 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-modules=java.se --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djboss.home.dir=/Users/sims/getting-started/target/server -Djboss.server.base.dir=/Users/sims/getting-started/target/server/standalone -Djboss.server.log.dir=/Users/sims/getting-started/target/server/standalone/log -Djboss.server.config.dir=/Users/sims/getting-started/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/Users/sims/getting-started/target/server/standalone/log/server.log -Dlogging.configuration=file:/Users/sims/getting-started/target/server/standalone/configuration/logging.properties 
-2025-08-25 10:06:29,823 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.6.4.Final
-2025-08-25 10:06:30,273 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
-2025-08-25 10:06:30,284 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.8.16.Final
-2025-08-25 10:06:30,290 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.8.16.Final
-2025-08-25 10:06:30,311 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 40) WFLYCLINF0001: Activating Infinispan subsystem.
-2025-08-25 10:06:30,316 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 42) WFLYRS0016: RESTEasy version 6.2.12.Final
-2025-08-25 10:06:30,316 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 48) WFLYCONF0001: Activating MicroProfile Config Subsystem
-2025-08-25 10:06:30,315 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 39) WFLYHEALTH0001: Activating Base Health Subsystem
-2025-08-25 10:06:30,320 INFO  [org.wildfly.extension.microprofile.telemetry] (ServerService Thread Pool -- 50) WFLYMPTEL0001: Activating MicroProfile Telemetry Subsystem
-2025-08-25 10:06:30,323 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 51) WFLYNAM0001: Activating Naming Subsystem
-2025-08-25 10:06:30,330 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 47) WFLYMETRICS0001: Activating Base Metrics Subsystem
-2025-08-25 10:06:30,329 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 57) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
-2025-08-25 10:06:30,336 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.13.Final)
-2025-08-25 10:06:30,338 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 49) WFLYMPHEALTH0001: Activating MicroProfile Health Subsystem
-2025-08-25 10:06:30,339 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
-2025-08-25 10:06:30,349 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
-2025-08-25 10:06:30,350 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.31.Final
-2025-08-25 10:06:30,375 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.3.18.Final starting
-2025-08-25 10:06:30,383 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00023: KeyStore file '/Users/sims/getting-started/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
-2025-08-25 10:06:30,393 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore /Users/sims/getting-started/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
-2025-08-25 10:06:30,416 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
-2025-08-25 10:06:30,418 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) Queuing requests.
-2025-08-25 10:06:30,420 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
-2025-08-25 10:06:30,490 WARN  [org.jboss.as.domain.http.api.undertow] (MSC service thread 1-3) WFLYDMHTTP0003: Unable to load console module for slot main, disabling console
-2025-08-25 10:06:30,492 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/sims/getting-started/target/server/standalone/deployments
-2025-08-25 10:06:30,532 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
-2025-08-25 10:06:30,556 INFO  [org.wildfly.extension.metrics] (Controller Boot Thread) WFLYMETRICS0006: Additional metrics systems discovered while configuring WildFly Metrics: OpenTelemetry Metrics. Please refer to the documentation for more information.
-2025-08-25 10:06:30,634 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
-2025-08-25 10:06:30,640 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2025-08-25 10:06:30,640 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
-2025-08-25 10:06:30,641 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 36.0.1.Final (WildFly Core 28.0.1.Final) started in 2927ms - Started 216 of 300 services (141 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
-2025-08-25 10:06:31,024 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "ROOT.war" (runtime-name: "ROOT.war")
-2025-08-25 10:06:31,374 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment ROOT.war
-2025-08-25 10:06:31,475 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 8.0.2.Final
-2025-08-25 10:06:31,695 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 5.1.5 (Final)
-2025-08-25 10:06:32,749 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 13) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class org.wildfly.examples.GettingStartedApplication
-2025-08-25 10:06:32,792 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 13) WFLYUT0021: Registered web context: '/' for server 'default-server'
-2025-08-25 10:06:32,835 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "ROOT.war" (runtime-name : "ROOT.war")
+2025-08-26 21:40:05,599 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman -ea -Djboss.home.dir=/Users/sims/getting-started/target/server --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED --add-modules=java.se -Djboss.home.dir=/Users/sims/getting-started/target/server -Djboss.server.base.dir=/Users/sims/getting-started/target/server/standalone -Djboss.server.log.dir=/Users/sims/getting-started/target/server/standalone/log -Djboss.server.config.dir=/Users/sims/getting-started/target/server/standalone/configuration -Dorg.jboss.boot.log.file=/Users/sims/getting-started/target/server/standalone/log/server.log -Dlogging.configuration=file:/Users/sims/getting-started/target/server/standalone/configuration/logging.properties 
+2025-08-26 21:40:06,524 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.6.4.Final
+2025-08-26 21:40:07,000 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 28) WFLYDR0001: Content added at location /Users/sims/getting-started/target/server/standalone/data/content/50/fee9df6e31de8ef181517712c33c81a7a36c5a/content
+2025-08-26 21:40:07,032 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-08-26 21:40:07,046 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.8.16.Final
+2025-08-26 21:40:07,057 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.8.16.Final
+2025-08-26 21:40:07,083 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 40) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-08-26 21:40:07,084 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 39) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-08-26 21:40:07,090 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 42) WFLYRS0016: RESTEasy version 6.2.12.Final
+2025-08-26 21:40:07,093 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 48) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-08-26 21:40:07,102 INFO  [org.wildfly.extension.microprofile.telemetry] (ServerService Thread Pool -- 50) WFLYMPTEL0001: Activating MicroProfile Telemetry Subsystem
+2025-08-26 21:40:07,106 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 57) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-08-26 21:40:07,111 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 51) WFLYNAM0001: Activating Naming Subsystem
+2025-08-26 21:40:07,111 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
+2025-08-26 21:40:07,114 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 47) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-08-26 21:40:07,120 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 49) WFLYMPHEALTH0001: Activating MicroProfile Health Subsystem
+2025-08-26 21:40:07,126 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.13.Final)
+2025-08-26 21:40:07,138 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "ROOT.war" (runtime-name: "ROOT.war")
+2025-08-26 21:40:07,156 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2025-08-26 21:40:07,162 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.31.Final
+2025-08-26 21:40:07,200 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY00023: KeyStore file '/Users/sims/getting-started/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
+2025-08-26 21:40:07,217 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.3.18.Final starting
+2025-08-26 21:40:07,219 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY01084: KeyStore /Users/sims/getting-started/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2025-08-26 21:40:07,264 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2025-08-26 21:40:07,266 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) Queuing requests.
+2025-08-26 21:40:07,269 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2025-08-26 21:40:07,341 WARN  [org.jboss.as.domain.http.api.undertow] (MSC service thread 1-7) WFLYDMHTTP0003: Unable to load console module for slot main, disabling console
+2025-08-26 21:40:07,358 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/sims/getting-started/target/server/standalone/deployments
+2025-08-26 21:40:07,375 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2025-08-26 21:40:08,010 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment ROOT.war
+2025-08-26 21:40:08,168 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 8.0.2.Final
+2025-08-26 21:40:08,507 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 5.1.5 (Final)
+2025-08-26 21:40:09,885 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 61) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class org.wildfly.examples.GettingStartedApplication
+2025-08-26 21:40:09,933 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2025-08-26 21:40:09,947 INFO  [org.wildfly.extension.metrics] (Controller Boot Thread) WFLYMETRICS0006: Additional metrics systems discovered while configuring WildFly Metrics: OpenTelemetry Metrics. Please refer to the documentation for more information.
+2025-08-26 21:40:09,976 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 35) WFLYSRV0010: Deployed "ROOT.war" (runtime-name : "ROOT.war")
+2025-08-26 21:40:10,011 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-08-26 21:40:10,018 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2025-08-26 21:40:10,019 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+2025-08-26 21:40:10,019 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 36.0.1.Final (WildFly Core 28.0.1.Final) started in 5960ms - Started 295 of 376 services (146 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2025-08-26 21:40:11,233 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location /Users/sims/getting-started/target/server/standalone/data/content/c6/eaab52a48621dbfda111565e2632497055b89f/content
+2025-08-26 21:40:11,237 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "GettingStartedServiceIT.war" (runtime-name: "GettingStartedServiceIT.war")
+2025-08-26 21:40:11,789 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment GettingStartedServiceIT.war
+2025-08-26 21:40:12,087 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 28) WFLYUT0021: Registered web context: '/GettingStartedServiceIT' for server 'default-server'
+2025-08-26 21:40:12,124 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "GettingStartedServiceIT.war" (runtime-name : "GettingStartedServiceIT.war")
+2025-08-26 21:40:12,818 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0022: Unregistered web context: '/GettingStartedServiceIT' from server 'default-server'
+2025-08-26 21:40:12,850 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment GettingStartedServiceIT.war (runtime-name: GettingStartedServiceIT.war) in 35ms
+2025-08-26 21:40:12,872 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location /Users/sims/getting-started/target/server/standalone/data/content/c6/eaab52a48621dbfda111565e2632497055b89f/content
+2025-08-26 21:40:12,872 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "GettingStartedServiceIT.war" (runtime-name: "GettingStartedServiceIT.war")
+2025-08-26 21:40:13,354 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+2025-08-26 21:40:13,358 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2025-08-26 21:40:13,366 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2025-08-26 21:40:13,368 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2025-08-26 21:40:13,369 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2025-08-26 21:40:13,369 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2025-08-26 21:40:13,371 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.3.18.Final stopping
+2025-08-26 21:40:13,390 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment ROOT.war (runtime-name: ROOT.war) in 27ms
+2025-08-26 21:40:13,400 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly 36.0.1.Final (WildFly Core 28.0.1.Final) stopped in 36ms
+2025-08-26 21:40:31,911 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.6.Final
+2025-08-26 21:40:32,516 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
+2025-08-26 21:40:32,524 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2025-08-26 21:40:32,636 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: WildFly 36.0.1.Final (WildFly Core 28.0.1.Final) starting
+2025-08-26 21:40:32,637 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	java.awt.headless = true
+	java.class.path = /Users/sims/getting-started/target/server/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Library/Java/JavaVirtualMachines/jdk-17.0.12.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/km/dyqz6fz93nx6hcf5396y01f00000gq/T/
+	java.library.path = /Users/sims/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.12+8-LTS-286
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.12
+	java.version.date = 2024-07-16
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.12+8-LTS-286
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/sims/getting-started/target/server
+	jboss.host.name = simphiwes-macbook-pro-16
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = simphiwes-macbook-pro-16
+	jboss.qualified.host.name = simphiwes-macbook-pro-16.local
+	jboss.server.base.dir = /Users/sims/getting-started/target/server/standalone
+	jboss.server.config.dir = /Users/sims/getting-started/target/server/standalone/configuration
+	jboss.server.data.dir = /Users/sims/getting-started/target/server/standalone/data
+	jboss.server.log.dir = /Users/sims/getting-started/target/server/standalone/log
+	jboss.server.name = simphiwes-macbook-pro-16
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/sims/getting-started/target/server/standalone/tmp
+	jdk.debug = release
+	jdk.serialFilter = maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000
+	line.separator = 
+
+	logging.configuration = file:/Users/sims/getting-started/target/server/standalone/configuration/logging.properties
+	module.path = /Users/sims/getting-started/target/server/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /Users/sims/getting-started/target/server/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 15.7
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-17.0.12.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/sims/getting-started/target/server/jboss-modules.jar -mp /Users/sims/getting-started/target/server/modules org.jboss.as.standalone -Djboss.home.dir=/Users/sims/getting-started/target/server -Djboss.server.base.dir=/Users/sims/getting-started/target/server/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.stderr.encoding = UTF-8
+	sun.stdout.encoding = UTF-8
+	user.country = ZA
+	user.dir = /Users/sims/getting-started
+	user.home = /Users/sims
+	user.language = en
+	user.name = sims
+	user.timezone = Africa/Johannesburg
+2025-08-26 21:40:32,638 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: -D[Standalone] -Djdk.serialFilter=maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000 -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/sims/getting-started/target/server/standalone/log/server.log -Dlogging.configuration=file:/Users/sims/getting-started/target/server/standalone/configuration/logging.properties 
+2025-08-26 21:40:33,592 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.6.4.Final
+2025-08-26 21:40:34,076 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-08-26 21:40:34,090 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.8.16.Final
+2025-08-26 21:40:34,097 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.8.16.Final
+2025-08-26 21:40:34,122 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 40) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-08-26 21:40:34,123 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 39) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-08-26 21:40:34,128 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 42) WFLYRS0016: RESTEasy version 6.2.12.Final
+2025-08-26 21:40:34,132 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 57) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-08-26 21:40:34,132 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 48) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-08-26 21:40:34,137 INFO  [org.wildfly.extension.microprofile.telemetry] (ServerService Thread Pool -- 50) WFLYMPTEL0001: Activating MicroProfile Telemetry Subsystem
+2025-08-26 21:40:34,143 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 51) WFLYNAM0001: Activating Naming Subsystem
+2025-08-26 21:40:34,145 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 47) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-08-26 21:40:34,146 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 49) WFLYMPHEALTH0001: Activating MicroProfile Health Subsystem
+2025-08-26 21:40:34,149 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
+2025-08-26 21:40:34,151 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.13.Final)
+2025-08-26 21:40:34,171 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "ROOT.war" (runtime-name: "ROOT.war")
+2025-08-26 21:40:34,213 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.31.Final
+2025-08-26 21:40:34,219 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2025-08-26 21:40:34,234 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY00023: KeyStore file '/Users/sims/getting-started/target/server/standalone/configuration/application.keystore' does not exist. Used blank.
+2025-08-26 21:40:34,246 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.3.18.Final starting
+2025-08-26 21:40:34,267 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY01084: KeyStore /Users/sims/getting-started/target/server/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2025-08-26 21:40:34,295 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2025-08-26 21:40:34,314 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) Queuing requests.
+2025-08-26 21:40:34,316 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2025-08-26 21:40:34,338 WARN  [org.jboss.as.domain.http.api.undertow] (MSC service thread 1-4) WFLYDMHTTP0003: Unable to load console module for slot main, disabling console
+2025-08-26 21:40:34,391 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2025-08-26 21:40:34,411 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/sims/getting-started/target/server/standalone/deployments
+2025-08-26 21:40:35,010 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment ROOT.war
+2025-08-26 21:40:35,162 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 8.0.2.Final
+2025-08-26 21:40:35,468 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 5.1.5 (Final)
+2025-08-26 21:40:36,828 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 63) RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class org.wildfly.examples.GettingStartedApplication
+2025-08-26 21:40:36,882 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2025-08-26 21:40:36,899 INFO  [org.wildfly.extension.metrics] (Controller Boot Thread) WFLYMETRICS0006: Additional metrics systems discovered while configuring WildFly Metrics: OpenTelemetry Metrics. Please refer to the documentation for more information.
+2025-08-26 21:40:36,938 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 35) WFLYSRV0010: Deployed "ROOT.war" (runtime-name : "ROOT.war")
+2025-08-26 21:40:36,978 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-08-26 21:40:36,984 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2025-08-26 21:40:36,985 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+2025-08-26 21:40:36,986 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 36.0.1.Final (WildFly Core 28.0.1.Final) started in 5611ms - Started 295 of 376 services (146 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community

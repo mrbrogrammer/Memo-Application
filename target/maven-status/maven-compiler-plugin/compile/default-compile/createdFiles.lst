@@ -1,0 +1,6 @@
+com/brogrammer/mymemo/model/Memo.class
+org/wildfly/examples/GettingStartedService.class
+org/wildfly/examples/GettingStartedApplication.class
+com/brogrammer/mymemo/view/MemoViewRenderer.class
+com/brogrammer/mymemo/rest/MemoServlet.class
+org/wildfly/examples/GettingStartedEndpoint.class
